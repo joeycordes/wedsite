@@ -7,3 +7,4 @@ wedsite
 • setup git deployment
 • fix deployment...
 • oops add ssh
+• setup post-receive again
