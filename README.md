@@ -8,3 +8,4 @@ wedsite
 • fix deployment...
 • oops add ssh
 • setup post-receive again
+• and again
