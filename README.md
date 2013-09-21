@@ -9,3 +9,4 @@ wedsite
 • oops add ssh
 • setup post-receive again
 • and again
+• once more in the correct directory
