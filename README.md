@@ -5,3 +5,4 @@ wedsite
 • play with git
 • setup hosting
 • add git app to host
+• authentication_key
