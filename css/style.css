@@ -8,10 +8,11 @@ body{
 }
 
 h1{
-	color: blue;
-	font-size: 2rem;
+	font-family: 'Clicker Script', serif;
+	font-size: 4rem;
+	color: rgb(50,50,50);
 }
 
 p{
-	font-size: 1rem;
+	font-size: 2rem;
 }
