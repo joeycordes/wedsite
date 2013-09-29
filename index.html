@@ -1,15 +1,126 @@
 <!DOCTYPE html>
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
 	<title>Joey &amp; Jeanette</title>
 	<meta name="description" content="Joey and Jeanette are getting married">
 	<meta name="viewport" content="width=device-width">
 
+	<link rel="stylesheet" type="text/css"  href="css/reset.css">
 	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	<link rel="stylesheet" type="text/css"  href="css/tympanus.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$('a').click(function() {
+			var elementClicked = $(this).attr("href");
+			var destination = $(elementClicked).offset().top;
+			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-0}, 500 );
+			return false;
+		});
+		});
+	</script>
 </head>
 <body>
-	<h1>Joey &amp; Jeanette</h1>
+	<nav class="cl-effect-3" id="cl-effect-3">
+		<a href="#jj"><img src="./img/rb.png" style="height: 1em;"></a>
+		<a href="#date">July 5th, 2014</a>
+		<a href="#tahoe">Lake Tahoe</a>
+		<a href="#jeanette">Jeanette</a>
+		<a href="#joey">Joey</a>
+		<a href="#rsvp">RSVP</a>
+		<a href="#honeyfund">Honeyfund</a>
+	</nav>
+
+	<a name="jj"></a>
+		<section id="jj">
+		<h1>Joey &amp; Jeanette</h1>
+	</section>
+
+	<a name="date"></a>
+	<section id="date">
+		<h1>July 5th, 2014</h1>
+		<h2>The Gatekeeper's Museum</h2>
+		<h2>130 W Lake Blvd, Tahoe City, CA 96145</h2>
+	</section>
+
+	<a name="tahoe"></a>
+	<section id="tahoe">
+		<h1>Lake Tahoe</h1>
+		<h2>Activities</h2>
+			<div class="3-col" id="boating">
+				<h3>Boating</h3>
+				<p>Jetskis, tubing, and big 'ol yachts</p>
+			</div>
+			<div class="3-col" id="beaches">
+				<h3>Beaches</h3>
+				<p>King's beach, Incline Village, and Carnelian Bay</p>
+			</div>
+			<div class="3-col" id="fireworks">
+				<h3>Fireworks</h3>
+				<p>Multiple fireworks shows planned for July 4th. The biggest will be in South Lake Tahoe with three individual shows in North Lake Tahoe.</p>
+			</div>
+		<h2>Accomodations</h2>
+			<div class="3-col" id="hyatt">
+				<h3>Hyatt Regency at Incline Vilalge</h3>
+				<p>A block of 20 rooms is reserved for our group at the Hyatt Regency. Room reservation comes with  access to a private beach.</p>
+			</div>
+			<div class="3-col" id="hotels">
+				<h3>Mourelatos Lakeshore Resort</h3>
+				<p>Another beach option closer to the wedding venue.</p>
+			</div>
+			<div class="3-col" id="house">
+				<h3>Estates</h3>
+				<p>Groups may be interested in reserving one of North Lake Tahoe's beautiful estates. We suggest searching Airbnb, Homeaway, and VRBO for reservations.
+			</div>
+	</section>
+
+	<a name="gettingthere"></a>
+	<section id="getting-there">
+		<h1>Getting There</h1>
+		<div class="3-col" id="reno-airport">
+			<h2>Reno International Airport</h2>
+			<p>The Reno airport is a scenic 1 hour drive from Tahoe City, CA. Rental cars and shuttles are available at the airport. The next closest major airport is Sacramento, a two-hour drive through the Tahoe National Forest.</p>
+		</div>
+		<div class="3-col" id="from-sf">
+			<h2>San Francisco Party Bus</h2>
+			<p>For all of our guests coming from San Francisco, [person] has arranged for a weekend party bus to whisk you away to the Lake. The bus shuttle will leave Thursday afternoon and return to the city Sunday night. The estimated cost is $[x].</p>
+		</div>
+		<div class="3-col" id="">
+			<h2>Flying to SFO or OAK</h2>
+			<p>If you're interested in enjoying the Bay Area before the wedding weekend, we recommend flying to SFO or OAK. The drive to Tahoe city will take 3-4 hours depending on traffic.</p>
+		</div>
+
+	</section>
+
+	<a name="jeanette"></a>
+	<section id="jeanette">
+		<h1>Jeanette Love Baker</h1>
+	</section>
+
+	<a name="joey"></a>
+	<section id="joey">
+		<h1>Joseph Patrick Cordes</h1>
+	</section>
+
+	<a name="RSVP"></a>
+	<section id="rsvp">
+		<h1>RSVP</h1>
+	</section>
+
+	<a name="honeyfund"></a>
+	<section id="honeyfund">
+		<h1>Honeyfund</h1>
+	</section>
 	
+	<footer>
+		<a href="https://twitter.com/joeyandjeanette"><img src="../img/twitter.png" height="100px"></a>
+		<a href="https://www.facebook.com/groups/365027090297520/"><img src="../img/facebook.png"  height="100px"></a>
+		<a href="https://instagram.com/joeyandjeanette"><img src="../img/instagram.png" height="100px"></a>
+	</footer>
+
 	<script>
 		<!== google analytics  ==>
 	</script>
