@@ -1,6 +1,6 @@
 html {
 	font-size: 100%;
-	font-family: Georgia;
+	font-family: Volkorn, Georgia, sans-serif;
 	color: rgb(50,50,50);
 }
 
@@ -23,14 +23,20 @@ nav {
 }
 
 nav a {
+	font-family: Volkorn, Georgia, sans-serif;
+	font-weight: 400;
 	font-size: .8em;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0 0 0px rgba(255,255,255,0.3);
 }
 
 nav a:active {
 	transform: translateY(2px);
 	-ms-transform: translateY(2px);
 	-webkit-transform: translateY(2px);
-
 	opacity: .5;
 }
 
@@ -39,21 +45,18 @@ section {
 	border-top: 5px solid rgb(100,100,100);
 }
 
-#jj {
-	background-image: url('../img/flickr_dlofink.jpg') ;
+
+#intro {
+	background-image: url('../img/flickr_traveling_lunas.jpg') ;
 	background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 }
 
-
-#tahoe {
-	background-image: url('../img/flickr_traveling_lunas.jpg') ;
-	background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
+#intro h1, #intro  h2 {
+	color: white;
+	font-weight: heavy;
 }
 
 h1{
@@ -74,6 +77,21 @@ p{
 	font-size: 1rem;
 	font-weight: normal;
 
+}
+
+.three-col {
+	width: 30%;
+	display: inline-block;
+	padding: 4%;
+	vertical-align: top;
+}
+
+#sunset {
+	background-image: url('../img/flickr_dlofink.jpg') ;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 }
 
 footer {
