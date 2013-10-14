@@ -2,8 +2,8 @@
 
 .Flexible-container {
     position: relative;
-    padding-bottom: 48%;
-    padding-top: 30px;
+    padding-bottom: 600px;
+    padding-top: 0px;
     height: 0;
     overflow: hidden;
 }

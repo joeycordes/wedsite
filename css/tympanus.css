@@ -10,7 +10,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-nav a {
+nav a, footer a {
 	position: relative;
 	display: inline-block;
 	margin: 15px 25px;
@@ -18,7 +18,9 @@ nav a {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+footer a:hover,
+footer a:focus {
 	outline: none;
 }
 

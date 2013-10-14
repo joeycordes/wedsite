@@ -15,11 +15,17 @@ a:hover {
 }
 
 nav {
-	position: fixed;
+	position: fixed; 
 	top: 0px;
 	width: 100%;
 	z-index: 1000;
 	background-color: #182234;
+}
+
+@media (max-width: 768px) {
+	nav {
+		display: none;
+	}
 }
 
 nav a {
@@ -52,6 +58,13 @@ section {
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
+	margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+	#intro {
+		margin-top: 0px;
+	}
 }
 
 #intro h1, #intro  h2 {
@@ -86,6 +99,20 @@ p{
 	vertical-align: top;
 }
 
+@media (max-width: 768px) {
+	.three-col {	
+		width: 100%;
+	}
+}
+
+#fireworks{
+	background-image: url('../img/flickr_stevedunleavy.jpg');
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}
+
 #sunset {
 	background-image: url('../img/flickr_dlofink.jpg') ;
 	background-size: cover;
@@ -96,4 +123,13 @@ p{
 
 footer {
 	background-color: #182234;
+	padding: 12px 0px;
+}
+
+
+footer a:active {
+	transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	-webkit-transform: translateY(2px);
+	opacity: .5;
 }
