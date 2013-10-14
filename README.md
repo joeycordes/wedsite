@@ -1,9 +1,4 @@
 wedsite
 =======
 
-• build wedsite
-• play with git
-• setup hosting
-• add git app to host
-• authentication_key
-• post-receive hook
+Learning git, vim, and more while building our wedding website.
