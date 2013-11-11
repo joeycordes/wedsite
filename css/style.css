@@ -1,7 +1,28 @@
-html {
+@font-face{
+    font-family: Fell;
+    src: url(../type/fell_opentype/IMFeENrm29C.otf);
+}
+
+@font-face{
+    font-family: Fell;
+    src: url(../type/fell_opentype/IMFeENit29C.otf);
+    font-style: italic;
+}
+
+@font-face{
+    font-family: Fell-flowers;
+    src: url(../type/fell_opentype/IMFeFlow2.otf);
+}
+
+html{
 	font-size: 100%;
-	font-family: Volkorn, Georgia, sans-serif;
+	font-family: Fell, Georgia, serif;
 	color: rgb(50,50,50);
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
 }
 
 body {
@@ -29,11 +50,11 @@ nav {
 }
 
 nav a {
-	font-family: Volkorn, Georgia, sans-serif;
+	font-family: Fell, Georgia, serif;
 	font-weight: 400;
-	font-size: .8em;
-	letter-spacing: 3px;
-	text-transform: uppercase;
+	font-size: 1.2rem;
+    font-variant: small-caps;
+    text-transform: lowercase;
 	text-decoration: none;
 	color: #fff;
 	text-shadow: 0 0 0px rgba(255,255,255,0.3);
@@ -46,62 +67,112 @@ nav a:active {
 	opacity: .5;
 }
 
-section {
-	height: 600px;
+nav h6 {
+    color: white;
+    font-size: 1.5rem;
 }
 
+nav > a, nav > h6 {
+    display: inline;
+}
 
-#intro {
+span.small-caps{
+    font-family: Fell;
+    font-variant: small-caps;
+}
+
+i {
+    font-family: Fell;
+    font-style: italic;
+}
+
+section {
+    padding-top: 2em;
+}
+
+.photo {
+    height: 480px;
+}
+
+#intro{
+    margin-top: 70px;
+}
+
+#intro #wordmark{
+    font-size: 4rem;
+    font-family: Fell, Georgia, serif;
+    font-style: italic;
+}
+
+#intro h2 {
+    padding: 0rem 1.5rem 2rem 1.5rem;
+}
+
+#lake-tahoe {
 	background-image: url('../img/flickr_traveling_lunas.jpg') ;
 	background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
-	margin-top: 60px;
+    background-position: left center;
 }
 
+/* remove nav for small screens */
 @media (max-width: 768px) {
 	#intro {
 		margin-top: 0px;
+        border-top: 8px solid #182234;
 	}
-}
-
-#intro h1, #intro  h2 {
-	color: white;
-	font-weight: heavy;
 }
 
 h1{
-	font-family: 'Clicker Script', serif;
-	font-size: 4rem;
+	font-family: Fell, Georgia, serif;
+	font-size: 3rem;
 	font-weight: normal;
-	margin-top: 1.5em;
 }
 
 h2 {
-	font-family: Volkorn, Georgia, serif;
+	font-family: Fell, Georgia, serif;
 	font-size: 2rem;
 	font-weight: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    padding-bottom: .8rem;
+}
+
+h6 {
+    font-family: Fell-flowers; Georgia, serif;
+}
+
+section h6{
+    font-size: 2rem; 
+    margin-bottom: 3rem;
 }
 
 p{
-	font-family: Wolkorn, Georgia, serif;
-	font-size: 1rem;
+	font-family: Fell, Georgia, serif;
+	font-size: 1.2rem;
+    line-height: 1.5rem;
 	font-weight: normal;
-
 }
 
 .three-col {
-	width: 30%;
+	width: 22%;
 	display: inline-block;
-	padding: 4%;
+	margin: 0rem 2rem 3rem 2rem;
 	vertical-align: top;
 }
 
+/* three col layout goes vertical for small screens */
 @media (max-width: 768px) {
 	.three-col {	
-		width: 100%;
+		width: 90%;
 	}
+}
+
+#map{
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 #fireworks{
@@ -110,6 +181,7 @@ p{
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
+    background-position: bottom center
 }
 
 #sunset {
@@ -118,6 +190,7 @@ p{
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
+    background-position: center center;
 }
 
 footer {
