@@ -15,9 +15,9 @@
 }
 
 html{
-	font-size: 100%;
-	font-family: Fell, Georgia, serif;
-	color: rgb(50,50,50);
+    font-size: 100%;
+    font-family: Fell, Georgia, serif;
+    color: rgb(50,50,50);
     -moz-font-feature-settings: "liga=1, dlig=1";
     -ms-font-feature-settings: "liga", "dlig";
     -webkit-font-feature-settings: "liga", "dlig";
@@ -26,45 +26,45 @@ html{
 }
 
 body {
-	background-color: white;
-	text-align: center;
-	text-decoration: none;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
 }
 
 a:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 nav {
-	position: fixed; 
-	top: 0px;
-	width: 100%;
-	z-index: 1000;
-	background-color: #182234;
+    position: fixed; 
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    background-color: #182234;
 }
 
 @media (max-width: 768px) {
-	nav {
-		display: none;
-	}
+    nav {
+        display: none;
+}
 }
 
 nav a {
-	font-family: Fell, Georgia, serif;
-	font-weight: 400;
-	font-size: 1.2rem;
+    font-family: Fell, Georgia, serif;
+    font-weight: 400;
+    font-size: 1.2rem;
     font-variant: small-caps;
     text-transform: lowercase;
-	text-decoration: none;
-	color: #fff;
-	text-shadow: 0 0 0px rgba(255,255,255,0.3);
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 0 0px rgba(255,255,255,0.3);
 }
 
 nav a:active {
-	transform: translateY(2px);
-	-ms-transform: translateY(2px);
-	-webkit-transform: translateY(2px);
-	opacity: .5;
+    transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    opacity: .5;
 }
 
 nav h6 {
@@ -92,6 +92,7 @@ section {
 
 .photo {
     height: 480px;
+    padding: 0px;
 }
 
 #intro{
@@ -109,32 +110,32 @@ section {
 }
 
 #lake-tahoe {
-	background-image: url('../img/flickr_traveling_lunas.jpg') ;
-	background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
+    background-image: url('../img/flickr_traveling_lunas.jpg') ;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-position: left center;
 }
 
 /* remove nav for small screens */
 @media (max-width: 768px) {
-	#intro {
-		margin-top: 0px;
+    #intro {
+        margin-top: 0px;
         border-top: 8px solid #182234;
-	}
+}
 }
 
 h1{
-	font-family: Fell, Georgia, serif;
-	font-size: 3rem;
-	font-weight: normal;
+    font-family: Fell, Georgia, serif;
+    font-size: 3rem;
+    font-weight: normal;
 }
 
 h2 {
-	font-family: Fell, Georgia, serif;
-	font-size: 2rem;
-	font-weight: normal;
+    font-family: Fell, Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
     font-variant: small-caps;
     text-transform: lowercase;
     padding-bottom: .8rem;
@@ -150,24 +151,24 @@ section h6{
 }
 
 p{
-	font-family: Fell, Georgia, serif;
-	font-size: 1.2rem;
+    font-family: Fell, Georgia, serif;
+    font-size: 1.2rem;
     line-height: 1.5rem;
-	font-weight: normal;
+    font-weight: normal;
 }
 
 .three-col {
-	width: 22%;
-	display: inline-block;
-	margin: 0rem 2rem 3rem 2rem;
-	vertical-align: top;
+    width: 22%;
+    display: inline-block;
+    margin: 0rem 2rem 3rem 2rem;
+    vertical-align: top;
 }
 
 /* three col layout goes vertical for small screens */
 @media (max-width: 768px) {
-	.three-col {	
-		width: 90%;
-	}
+    .three-col {	
+        width: 90%;
+}
 }
 
 #map{
@@ -176,32 +177,32 @@ p{
 }
 
 #fireworks{
-	background-image: url('../img/flickr_stevedunleavy.jpg');
-	background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
+    background-image: url('../img/flickr_stevedunleavy.jpg');
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-position: bottom center
 }
 
 #sunset {
-	background-image: url('../img/flickr_dlofink.jpg') ;
-	background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
+    background-image: url('../img/flickr_dlofink.jpg') ;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-position: center center;
 }
 
 footer {
-	background-color: #182234;
-	padding: 12px 0px;
+    background-color: #182234;
+    padding: 12px 0px;
 }
 
 
 footer a:active {
-	transform: translateY(2px);
-	-ms-transform: translateY(2px);
-	-webkit-transform: translateY(2px);
-	opacity: .5;
+    transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    opacity: .5;
 }
