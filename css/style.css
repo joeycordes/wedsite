@@ -167,7 +167,7 @@ p{
 /* three col layout goes vertical for small screens */
 @media (max-width: 768px) {
     .three-col {	
-        width: 90%;
+        width: 84%;
 }
 }
 
