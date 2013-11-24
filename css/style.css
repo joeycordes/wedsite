@@ -43,12 +43,6 @@ nav {
     background-color: #182234;
 }
 
-@media (max-width: 768px) {
-    nav {
-        display: none;
-}
-}
-
 nav a {
     font-family: Fell, Georgia, serif;
     font-weight: 400;
@@ -118,14 +112,6 @@ section {
     background-position: left center;
 }
 
-/* remove nav for small screens */
-@media (max-width: 768px) {
-    #intro {
-        margin-top: 0px;
-        border-top: 8px solid #182234;
-}
-}
-
 h1{
     font-family: Fell, Georgia, serif;
     font-size: 3rem;
@@ -164,13 +150,6 @@ p{
     vertical-align: top;
 }
 
-/* three col layout goes vertical for small screens */
-@media (max-width: 768px) {
-    .three-col {	
-        width: 84%;
-}
-}
-
 #map{
     margin-top: 0px;
     padding-top: 0px;
@@ -199,10 +178,36 @@ footer {
     padding: 12px 0px;
 }
 
+footer a img {
+    height: 80px;
+}
 
 footer a:active {
     transform: translateY(2px);
     -ms-transform: translateY(2px);
     -webkit-transform: translateY(2px);
     opacity: .5;
+}
+
+/* Screens under a certain size */
+@media (max-width: 768px) {
+    /* remove nav for small screens */
+    nav {
+        display: none;
+    }
+    /* add border top on small screens */
+    #intro {
+        margin-top: 0px;
+        border-top: 8px solid #182234;
+    }
+    /* three col layout goes vertical for small screens */
+    .three-col {
+        width: 84%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    /* change footer image links height */
+    footer a img {
+         height: 44px;
+    }
 }
