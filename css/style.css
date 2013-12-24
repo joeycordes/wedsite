@@ -116,6 +116,7 @@ h1{
     font-family: Fell, Georgia, serif;
     font-size: 3rem;
     font-weight: normal;
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -127,12 +128,19 @@ h2 {
     padding-bottom: .8rem;
 }
 
+h3{
+    font-family: Fell, Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    padding-bottom: .8rem;
+}
 h6 {
     font-family: Fell-flowers; Georgia, serif;
+    font-size: 1rem;
 }
 
 section h6{
-    font-size: 2rem; 
+    font-size: 1.6rem; 
     margin-bottom: 3rem;
 }
 
@@ -142,6 +150,48 @@ p{
     line-height: 1.5rem;
     font-weight: normal;
 }
+
+/* intro spacing */
+
+#ornament-top{
+    padding-top: 1.4rem;
+}
+
+#save-the-date{
+    
+}
+
+#july-5th-2014{
+    margin-bottom: 3.4rem;
+    
+}
+
+#jeanette-love-baker{
+    
+}
+
+#ampersand {
+
+}
+
+#joseph-patrick-cordes{
+   margin-bottom: 4.4rem;
+}
+
+#the-gatekeepers-museum{
+   margin-bottom: 1.2rem;
+}
+
+#lake-tahoe-california{
+
+}
+
+#ornament-bottom{
+    margin-bottom: 6rem;
+}
+
+/* end intro spacing */
+
 
 .three-col {
     width: 22%;
@@ -210,4 +260,21 @@ footer a:active {
     footer a img {
          height: 44px;
     }
+}
+
+@media (max-width: 480px) {
+    h1{ font-size: 1.8rem;}
+    h2{ font-size: 1.5rem;}
+    h3{ font-size: 1.5rem;}
+
+    #intro h2{ font-size: 1.2rem;}
+    #intro h3{ font-size: 1.4rem;}
+    #intro h6{ font-size: 1.2rem;}
+    #ornament-top{ padding-top: .6rem;}
+    #save-the-date h2{ padding-bottom: 1rem;} 
+    #july-5th-2014{ margin-bottom: 2rem;} 
+    #joseph-patrick-cordes{ margin-bottom: 3rem;}
+    #the-gatekeepers-museum h3{ padding-bottom: 0rem;}
+    #the-gatekeepers-museum{ margin-bottom: 1rem;}
+    #ornament-bottom{ margin-bottom: 4.5rem;}
 }
